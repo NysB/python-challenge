@@ -18,3 +18,4 @@ Please see below a screenshot for the PyBank task
 
 
 Please see below a screenshot for the PyPoll task
+![image](https://user-images.githubusercontent.com/123317735/223905995-18b83dda-a3e8-484c-9c64-e6aa814618e9.png)
