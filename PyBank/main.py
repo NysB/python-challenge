@@ -7,8 +7,7 @@ csvpath = os.path.join('Resources','budget_data.csv')
 with open(csvpath) as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
     csv_header = next(csvreader)
-    print("Header row:" + str(csv_header))
-
+    
     # Define variables
 
     number_months = 0
