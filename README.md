@@ -14,6 +14,7 @@ In the PyPoll folder you will find:
 ## Result
 
 Please see below a screenshot for the PyBank task
-image.png
+![image](https://user-images.githubusercontent.com/123317735/223896984-03d546a5-7afd-43ce-92bf-e2877bf639bd.png)
+
 
 Please see below a screenshot for the PyPoll task
