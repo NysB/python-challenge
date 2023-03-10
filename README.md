@@ -5,11 +5,12 @@ This repository contains my homework for Module 2.
 In the PyBank folder you will find:
 1. main.py file: containing the code for task 1
 2. Resources folder with the csv file
+3. analysis folder with output text file
 
 In the PyPoll folder you will find:
 1. main.py file: containing the code for task 2
 2. Resources folder with the csv file
-
+3. analysis folder with output text file
 
 ## Result
 
