@@ -56,18 +56,19 @@ print("Greatest Increase in Profits: " + greatest_increase_month + " ($" + str(g
 print("Greatest Decrease in Profits: " + greatest_decrease_month + " ($" + str(greatest_decrease_amount) + ")")
 
 
+# Open text file for writing
+output_path = os.path.join('analysis','output_data.txt')
 
-# Specify the file to write to
-output_path = os.path.join("..", "output", "new.csv")
+with open(output_path, 'w') as txtfile:
+    
+    # Write text
+    txtfile.write("Financial Analysis\n")
+    txtfile.write("---------------------------\n")
+    txtfile.write("Total Months: " + str(number_months) + "\n")
+    txtfile.write("Total: $" + str(total_amount)+ "\n")
+    txtfile.write("Average Change: $" + str(round(change_amount / (number_months-1),2))+ "\n")
+    txtfile.write("Greatest Increase in Profits: " + greatest_increase_month + " ($" + str(greatest_increase_amount) + ")\n")
+    txtfile.write("Greatest Decrease in Profits: " + greatest_decrease_month + " ($" + str(greatest_decrease_amount) + ")\n")
 
-# Open the file using "write" mode. Specify the variable to hold the contents
-with open(output_path, 'w') as csvfile:
 
-    # Initialize csv.writer
-    csvwriter = csv.writer(csvfile, delimiter=',')
 
-    # Write the first row (column headers)
-    csvwriter.writerow(['First Name', 'Last Name', 'SSN'])
-
-    # Write the second row
-    csvwriter.writerow(['Caleb', 'Frost', '505-80-2901'])

@@ -77,17 +77,19 @@ print("Winner: " + winner)
 print("----------------------")
 
 
-# Specify the file to write to
-output_path = os.path.join("..", "output", "new.csv")
+# Open text file for writing
+output_path = os.path.join('analysis','output_data.txt')
 
-# Open the file using "write" mode. Specify the variable to hold the contents
-with open(output_path, 'w') as csvfile:
-
-    # Initialize csv.writer
-    csvwriter = csv.writer(csvfile, delimiter=',')
-
-    # Write the first row (column headers)
-    csvwriter.writerow(['First Name', 'Last Name', 'SSN'])
-
-    # Write the second row
-    csvwriter.writerow(['Caleb', 'Frost', '505-80-2901'])
+with open(output_path, 'w') as txtfile:
+    
+    # Write text
+    txtfile.write("Election Results\n")
+    txtfile.write("----------------------\n")
+    txtfile.write("Total Votes: " + str(total_votes) + "\n")
+    txtfile.write("----------------------\n")
+    txtfile.write(participant_one + ": " + str(round((votes_participant_one/total_votes)*100,3)) + "% (" + str(votes_participant_one) + ")\n")
+    txtfile.write(participant_two + ": " + str(round((votes_participant_two/total_votes)*100,3)) + "% (" + str(votes_participant_two) + ")\n")
+    txtfile.write(participant_three + ": " + str(round((votes_participant_three/total_votes)*100,3)) + "% (" + str(votes_participant_three) + ")\n")
+    txtfile.write("----------------------\n")
+    txtfile.write("Winner: " + winner + "\n")
+    txtfile.write("----------------------\n")
